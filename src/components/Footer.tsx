@@ -1,7 +1,7 @@
 import { Box, Button, Flex, HStack, Link as ChakraLink } from "@chakra-ui/react"
 import { useCallback } from "react"
-import { FaDiscord, FaInstagramSquare, FaPlay, FaTelegram, FaTwitter } from "react-icons/fa"
-
+import { FaDiscord, FaPlay, FaTelegramPlane, FaTwitter } from "react-icons/fa"
+import { AiFillInstagram } from "react-icons/ai"
 interface FooterProps {
   openVideo: () => void
   onClick: () => void
@@ -36,13 +36,13 @@ export const Footer = ({ openVideo, onClick }: FooterProps) => {
 
         <ChakraLink isExternal href="https://t.me/cloudcitynft" p={2}>
           <Button width="100%" variant="solid" colorScheme="black">
-            <FaTelegram size="20px" color="white" />
+            <FaTelegramPlane size="20px" color="white" />
           </Button>
         </ChakraLink>
 
         <ChakraLink isExternal href="https://instagram.com/cloudcitynft" p={2}>
           <Button width="100%" variant="solid" colorScheme="black">
-            <FaInstagramSquare size="20px" color="white" />
+            <AiFillInstagram size="20px" color="white" />
           </Button>
         </ChakraLink>
       </HStack>
