@@ -3,7 +3,15 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "eslint src --fix && yarn format",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write src",
+    "up": "yarn upgrade-interactive",
+    "up-latest": "yarn up --latest",
+    "release": "standard-version",
+    "push-release": "git push --follow-tags origin main"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.5",
@@ -15,6 +23,7 @@
     "framer-motion": "^4.0.3",
     "isemail": "^3.2.0",
     "next": "latest",
+    "next-pwa": "^5.4.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.26.1",

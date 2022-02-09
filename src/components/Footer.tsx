@@ -1,6 +1,6 @@
 import { Box, Button, Flex, HStack, Link as ChakraLink } from "@chakra-ui/react"
 import { useCallback } from "react"
-import { FaDiscord, FaEnvelope, FaPlay, FaTelegram, FaTwitter } from "react-icons/fa"
+import { FaDiscord, FaInstagramSquare, FaPlay, FaTelegram, FaTwitter } from "react-icons/fa"
 
 export const Footer = ({ openVideo, onClick }) => {
   const handleClick = useCallback(() => {
@@ -18,27 +18,27 @@ export const Footer = ({ openVideo, onClick }) => {
             </Button>
           </Box>
 
-          <ChakraLink isExternal href="https://twitter.com" p={2}>
+          <ChakraLink isExternal href="https://twitter.com/cloudcitynft" p={2}>
             <Button width="100%" variant="outline" colorScheme="black">
               <FaTwitter size="20px" color="white" />
             </Button>
           </ChakraLink>
 
-          <ChakraLink isExternal href="" p={2}>
+          <ChakraLink isExternal href="https://discord.gg/5Tyx7m5p7d" p={2}>
             <Button width="100%" variant="solid" colorScheme="black">
               <FaDiscord size="20px" color="white" />
             </Button>
           </ChakraLink>
 
-          <ChakraLink isExternal href="" p={2}>
+          <ChakraLink isExternal href="https://t.me/cloudcitynft" p={2}>
             <Button width="100%" variant="solid" colorScheme="black">
               <FaTelegram size="20px" color="white" />
             </Button>
           </ChakraLink>
 
-          <ChakraLink isExternal href="" p={2}>
+          <ChakraLink isExternal href="https://instagram.com/cloudcitynft" p={2}>
             <Button width="100%" variant="solid" colorScheme="black">
-              <FaEnvelope size="20px" color="white" />
+              <FaInstagramSquare size="20px" color="white" />
             </Button>
           </ChakraLink>
         </HStack>

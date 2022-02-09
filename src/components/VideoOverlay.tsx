@@ -26,15 +26,19 @@ export const VideoOverlay = ({ isOpen, onClose, video }) => (
     >
       <ModalOverlay onClick={onClose}>
         <ModalContent m={4}>
-          <Box
-            as="iframe"
-            src={video}
-            width="100%"
-            height="100%"
+          {/* <Box
+            width="auto"
+            height="auto"
+            bgColor="black"
             sx={{
               aspectRatio: "16/9",
+              volume: "0",
             }}
-          />
+          > */}
+          <AspectRatio bgColor="black" ratio={16 / 9}>
+            <Vimeo video={video} autoplay width="1280" height="720" />
+          </AspectRatio>
+          {/* </Box> */}
         </ModalContent>
       </ModalOverlay>
     </Modal>
