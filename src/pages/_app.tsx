@@ -1,27 +1,37 @@
 import { Box, ChakraProvider } from "@chakra-ui/react"
-
-import theme from "../theme/theme"
+import { CacheProvider } from "@emotion/react"
+import { DefaultSeo } from "next-seo"
 import { AppProps } from "next/app"
-import Fonts from "../theme/font"
+import Head from "next/head"
+import createCache from "src/theme/cache"
+import Fonts from "src/theme/font"
+import theme from "src/theme/theme"
 
-import "@/styles/global.css"
+import SEOConfig from "../../next-seo.config"
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider resetCSS theme={theme}>
-      <Fonts />
-      <Box
-        bgPosition="center"
-        bgRepeat="no-repeat"
-        overflow="auto"
-        height="auto"
-        bgColor="black"
-        bgImage="url('/background.png')"
-      >
-        <Component {...pageProps} />
-      </Box>
-    </ChakraProvider>
+    <CacheProvider value={createCache()}>
+      <ChakraProvider resetCSS theme={theme}>
+        <Head>
+          <meta
+            name="viewport"
+            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
+          />
+        </Head>
+        <Fonts />
+        <DefaultSeo {...SEOConfig} />
+        <Box
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          overflow="auto"
+          height="auto"
+          bgColor="black"
+          bgImage="url('/background.png')"
+        >
+          <Component {...pageProps} />
+        </Box>
+      </ChakraProvider>
+    </CacheProvider>
   )
 }
-
-export default MyApp

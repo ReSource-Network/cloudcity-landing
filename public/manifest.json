@@ -1,0 +1,12 @@
+{
+  "short_name": "Cloud City",
+  "name": "Cloud City - Coming Soon",
+  "lang": "en",
+  "start_url": "/",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "portrait",
+  "prefer_related_applications": false
+}

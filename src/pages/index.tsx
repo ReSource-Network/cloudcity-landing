@@ -1,21 +1,15 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Image,
-  SimpleGrid,
-  Text,
-  VStack,
-  HStack,
-  Center,
-  useDisclosure,
-} from "@chakra-ui/react"
+import { Box, Center, Flex, Image, Stack, Text, useDisclosure } from "@chakra-ui/react"
+import { useCallback, useState } from "react"
 
-import { Container } from "../components/Container"
-import { Footer } from "../components/Footer"
-import { Stack } from "@chakra-ui/react"
-import { VideoOverlay } from "@/components/VideoOverlay"
-import { useState, useCallback } from "react"
+import { VideoOverlay, Footer } from "src/components"
+
+const videos = [
+  "https://player.vimeo.com/video/675587695?h=9273bda325&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  "https://player.vimeo.com/video/675587174?h=918d5a1313&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  "https://player.vimeo.com/video/675587396?h=7f162c73aa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  "https://player.vimeo.com/video/675587549?h=61506a8fb6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  "https://player.vimeo.com/video/675587695?h=9273bda325&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+]
 
 const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -25,14 +19,6 @@ const Index = () => {
     () => (idx < videos.length - 1 ? setIdx(idx + 1) : setIdx(0)),
     [idx],
   )
-
-  const videos = [
-    "https://player.vimeo.com/video/675587695?h=9273bda325&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    "https://player.vimeo.com/video/675587174?h=918d5a1313&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    "https://player.vimeo.com/video/675587396?h=7f162c73aa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    "https://player.vimeo.com/video/675587549?h=61506a8fb6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-    "https://player.vimeo.com/video/675587695?h=9273bda325&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-  ]
 
   return (
     <>

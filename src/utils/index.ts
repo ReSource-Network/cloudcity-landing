@@ -1,3 +1,4 @@
+// Utils
 export function capsFirst(str) {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
@@ -15,3 +16,6 @@ export function debounce(limit, callback) {
 export function percentage(x, y) {
   return 100 / (y / x)
 }
+
+// Constants
+export const APP_NAME = "Cloud City - Coming Soon"
