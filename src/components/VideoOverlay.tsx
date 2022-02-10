@@ -21,15 +21,17 @@ export const VideoOverlay = ({ isOpen, onClose, video }) => (
       closeOnEsc
       isCentered
       motionPreset="none"
-      size="xl"
+      size="5xl"
       trapFocus={false}
     >
       <ModalOverlay onClick={onClose}>
-        <ModalContent m={4}>
-          <AspectRatio bgColor="black" ratio={16 / 9}>
-            <Vimeo video={video} autoplay width="1280" height="720" />
-          </AspectRatio>
-        </ModalContent>
+        <ModalCloseButton>
+          <ModalContent m={4}>
+            <AspectRatio bgColor="black" ratio={16 / 9}>
+              <Vimeo video={video} autoplay width="1280" height="720" />
+            </AspectRatio>
+          </ModalContent>
+        </ModalCloseButton>
       </ModalOverlay>
     </Modal>
   </>
