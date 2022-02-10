@@ -27,7 +27,7 @@ const Index = () => {
           <Text fontSize={{ base: "56px", md: "72px", lg: "88px" }} color="white" mb="-8">
             Cloud City
           </Text>
-
+          <img width={"50%"} src="https://imagedelivery.net/MNQzO2u-Hvj0wZ9WwT5rHQ/34510aa7-9738-4cf5-8155-42daaaa1ba00/public" />
           <Text color="white" fontSize="x-large" pb={4}>
             coming soon...
           </Text>
