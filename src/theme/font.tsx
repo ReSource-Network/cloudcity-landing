@@ -3,13 +3,6 @@ import { Global } from "@emotion/react"
 export const Fonts = () => (
   <Global
     styles={`
-
-
-      @font-face {
-        font-family: 'Audiowide', cursive';
-        src: url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-      }
-
       @font-face {
         font-family: 'NeueMachina';
         font-style: normal;
