@@ -8,6 +8,8 @@ import Fonts from "src/theme/font"
 import theme from "src/theme/theme"
 
 import SEOConfig from "../../next-seo.config"
+// import { Nav } from "src/components"
+import { Navv } from "src/components"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

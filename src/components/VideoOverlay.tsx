@@ -1,17 +1,5 @@
-import {
-  AspectRatio,
-  Box,
-  Button,
-  Center,
-  Modal,
-  ModalBody,
-  ModalCloseButton,
-  ModalContent,
-  ModalFooter,
-  ModalOverlay,
-} from "@chakra-ui/react"
+import { AspectRatio, Modal, ModalCloseButton, ModalContent, ModalOverlay } from "@chakra-ui/react"
 import Vimeo from "@u-wave/react-vimeo"
-import { VStack, Flex } from "@chakra-ui/react"
 
 export const VideoOverlay = ({ isOpen, onClose, video }) => (
   <>
