@@ -28,7 +28,7 @@ export const Footer = ({ openVideo, onClick }: FooterProps) => {
 
   return (
     <Flex minW="90%">
-      <Grid templateColumns="repeat(6, 1fr)" gap={2} ml="2" mr="2">
+      <Grid templateColumns="repeat(6, 1fr)" width="100%">
         <GridItem w="100%">
           <Box>
             <VisuallyHidden>Play</VisuallyHidden>
@@ -51,7 +51,7 @@ export const Footer = ({ openVideo, onClick }: FooterProps) => {
         <GridItem w="100%">
           <ChakraLink
             isExternal
-            href="https://mirror.xyz/0xCCFDA4DBdAB295d1486E79b58a72387315884E2f/"
+            href="https://mirror.xyz/cloudcity.eth/QD_4USDIxl00-lNkQFnFZTBnfdmdoHxjtkXG8OG2EKA"
           >
             <VisuallyHidden>Mirror</VisuallyHidden>
             <VStack p={2}>
@@ -62,7 +62,7 @@ export const Footer = ({ openVideo, onClick }: FooterProps) => {
                 aria-label="Mirror"
                 title="Mirror"
                 icon={<MirrorIcon size="20px" color="white" />}
-                _hover={{ color: "black" }}
+                _hover={{}}
               />
               <Text fontSize="small" color="white">
                 mirror
