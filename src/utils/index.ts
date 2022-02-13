@@ -18,9 +18,10 @@ export function percentage(x, y) {
 }
 
 // Constants
-export const APP_NAME = "Cloud City - Coming Soon"
+export const APP_NAME = "Cloud City"
 
 export const VIDEOS = [
+  "https://player.vimeo.com/video/676724837?h=06c9ea4559&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   "https://player.vimeo.com/video/675587695?h=9273bda325&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   "https://player.vimeo.com/video/675587174?h=918d5a1313&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
   "https://player.vimeo.com/video/675587396?h=7f162c73aa&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
