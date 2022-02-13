@@ -36,7 +36,7 @@ export const Main = () => {
             coming soon...
           </Text>
           <Box maxW="90%" w="auto">
-            <Image src="/rect-gradient.svg" />
+            <Image src="/gradient.svg" />
           </Box>
           <Footer openVideo={onOpenVideo} onClick={loopThroughArray} />
         </Stack>

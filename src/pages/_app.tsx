@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
           bgRepeat="no-repeat"
           overflow="auto"
           height="auto"
-          bgColor="black"
+          bgColor="rgb(121, 165, 183)"
           bgImage="url('/background.png')"
         >
           <Component {...pageProps} />
