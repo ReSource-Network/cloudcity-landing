@@ -31,8 +31,8 @@ export const Main = () => {
 
       <Flex justifyContent="center" alignItems="center" height="100vh" maxW="100%">
         <Stack maxW="100%" alignItems="center">
-          <Box width="md">
-            <Image src="/watermark.png" alt="logo" />
+          <Box width="lg">
+            <Image src="/inline-watermark.png" alt="logo" width="100%" />
           </Box>
 
           <Text color="white" fontSize="x-large" pb={4}>
