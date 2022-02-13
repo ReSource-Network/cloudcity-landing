@@ -28,8 +28,8 @@ export default function App({ Component, pageProps }: AppProps) {
           bgRepeat="no-repeat"
           overflow="auto"
           height="auto"
-          bgColor="rgb(121, 165, 183)"
-          // bgColor="#6F8AB7"
+          // bgColor="rgb(121, 165, 183)"
+          bgColor="black"
           bgImage="url('/background.png')"
         >
           <Component {...pageProps} />
@@ -38,4 +38,3 @@ export default function App({ Component, pageProps }: AppProps) {
     </CacheProvider>
   )
 }
-
