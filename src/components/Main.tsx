@@ -28,7 +28,7 @@ export const Main = () => {
     <>
       <Flex justifyContent="center" alignItems="center" height="100vh" maxW="100%">
         <Stack maxW="100%" alignItems="center">
-          <Box width="lg">
+          <Box width="lg" maxW="90%">
             <Image src="/inline-watermark.png" alt="logo" width="100%" />
           </Box>
 
