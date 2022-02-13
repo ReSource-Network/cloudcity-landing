@@ -31,9 +31,9 @@ export const Main = () => {
 
       <Flex justifyContent="center" alignItems="center" height="100vh" maxW="100%">
         <Stack maxW="100%" alignItems="center">
-          <Text fontSize={{ base: "56px", md: "72px", lg: "88px" }} color="white" mb="-8">
-            Cloud City
-          </Text>
+          <Box width="md">
+            <Image src="/watermark.png" alt="logo" />
+          </Box>
 
           <Text color="white" fontSize="x-large" pb={4}>
             coming soon...
