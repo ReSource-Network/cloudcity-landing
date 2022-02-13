@@ -32,12 +32,12 @@ export const Main = () => {
             <Image src="/inline-watermark.png" alt="logo" width="100%" />
           </Box>
 
-          <Text color="white" fontSize="x-large" pb={4}>
+          <Text color="white" fontSize="x-large" p={4}>
             coming soon...
           </Text>
-          <Box maxW="90%" w="auto">
-            <Image src="/rect-gradient.svg" />
-          </Box>
+          {/* <Box maxW="90%" w="auto"> */}
+          {/* <Image src="/rect-gradient.svg" /> */}
+          {/* </Box> */}
           <Footer openVideo={onOpenVideo} onClick={loopThroughArray} />
         </Stack>
       </Flex>
