@@ -1,7 +1,7 @@
 /** @type {import('next-seo').DefaultSeoProps} */
 const defaultSEOConfig = {
   title: "Cloud City",
-  titleTemplate: "%s | Cloud City",
+  titleTemplate: "%s | Microverse",
   defaultTitle: "Cloud City | Microverse",
   description:
     "Cloud City is a self existing autonomous decentralized city infrastructure project built with Unreal Engine 4.",
@@ -10,10 +10,10 @@ const defaultSEOConfig = {
     url: "https://cloudcity.art",
     title: "Cloud City",
     description:
-      "Cloud City is a self existing autonomous decentralized city infrastructure project built with Unreal Engine 4.",
+      "Cloud city is a visionary metropolis where 3D art & collaboration intersect to help humanity envision a world where metaverse technology is used to manifest a utopian civilization.",
     images: [
       {
-        url: "https://imagedelivery.net/MNQzO2u-Hvj0wZ9WwT5rHQ/34510aa7-9738-4cf5-8155-42daaaa1ba00/public",
+        url: "https://imagedelivery.net/MNQzO2u-Hvj0wZ9WwT5rHQ/3da3273b-11c2-4460-7ed7-74e2cac5ef00/public",
         alt: "cloud city distance og-image",
       },
     ],
