@@ -13,7 +13,7 @@ const defaultSEOConfig = {
       "Cloud city is a visionary metropolis where 3D art & collaboration intersect to help humanity envision a world where metaverse technology is used to manifest a utopian civilization.",
     images: [
       {
-        url: "https://imagedelivery.net/MNQzO2u-Hvj0wZ9WwT5rHQ/62111862-201f-46d5-1292-743b521a7f00/public",
+        url: "https://imagedelivery.net/MNQzO2u-Hvj0wZ9WwT5rHQ/1858838c-4d50-4812-d0b5-26631f5e9400/public",
         alt: "cloud city distance og-image",
       },
     ],
