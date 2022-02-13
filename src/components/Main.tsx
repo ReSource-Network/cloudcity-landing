@@ -32,7 +32,7 @@ export const Main = () => {
             <Image src="/inline-watermark.png" alt="logo" width="100%" />
           </Box>
 
-          <Text color="white" fontSize="x-large" p={4}>
+          <Text color="white" fontSize="x-large" pb={4}>
             coming soon...
           </Text>
           {/* <Box maxW="90%" w="auto"> */}
