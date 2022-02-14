@@ -1,18 +1,8 @@
-import {
-  Box,
-  Center,
-  Container,
-  Flex,
-  Image,
-  List,
-  ListItem,
-  Stack,
-  Text,
-  useDisclosure,
-} from "@chakra-ui/react"
+import { Box, Button, Center, Flex, Image, Stack, Text, useDisclosure } from "@chakra-ui/react"
+import Link from "next/link"
 import React, { useCallback, useState } from "react"
+import { Footer, VideoOverlay } from "src/components"
 import { VIDEOS } from "src/utils"
-import { Footer, VideoOverlay, Navv, MenuOverlay } from "src/components"
 
 export const Main = () => {
   const { isOpen: isOpenVideo, onOpen: onOpenVideo, onClose: onCloseVideo } = useDisclosure()
@@ -32,13 +22,27 @@ export const Main = () => {
             <Image src="/inline-watermark.png" alt="logo" width="100%" />
           </Box>
 
-          <Text color="white" fontSize="x-large" pb={4}>
+          <Text color="white" fontSize="x-large" p={2}>
             coming soon...
           </Text>
-          <Box maxW="90%" w="auto">
+
+          <Box maxW="80%" w="auto">
             <Image src="/gradient.svg" />
           </Box>
           <Footer openVideo={onOpenVideo} onClick={loopThroughArray} />
+          <Box pt={4}>
+            <Link key="whitelist" href="/whitelist">
+              <Button
+                bgColor="rgb(130, 164, 181)"
+                textColor="white"
+                variant="outline"
+                pt={1}
+                _hover={{ color: "none" }}
+              >
+                <Center>whitelist</Center>
+              </Button>
+            </Link>
+          </Box>
         </Stack>
       </Flex>
 

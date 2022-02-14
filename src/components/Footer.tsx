@@ -30,7 +30,7 @@ export const Footer = ({ openVideo, onClick }: FooterProps) => {
     <Flex minW="90%">
       <Grid templateColumns="repeat(6, 1fr)" width="100%">
         <GridItem w="100%">
-          <Box>
+          <ChakraLink>
             <VisuallyHidden>Play</VisuallyHidden>
             <VStack p={2}>
               <IconButton
@@ -46,7 +46,7 @@ export const Footer = ({ openVideo, onClick }: FooterProps) => {
                 play
               </Text>
             </VStack>
-          </Box>
+          </ChakraLink>
         </GridItem>
         <GridItem w="100%">
           <ChakraLink
