@@ -39,7 +39,7 @@ export const Main = () => {
               pt={1}
               _hover={{ color: "none" }}
             >
-              <PopupButton id="krjzwhpd">
+              <PopupButton id="krjzwhpd" style={{ all: "unset" }}>
                 <Center>whitelist</Center>
               </PopupButton>
             </Button>
