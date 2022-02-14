@@ -1,4 +1,5 @@
 import { Box, Button, Center, Flex, Image, Stack, Text, useDisclosure } from "@chakra-ui/react"
+import { PopupButton } from "@typeform/embed-react"
 import Link from "next/link"
 import React, { useCallback, useState } from "react"
 import { Footer, VideoOverlay } from "src/components"
@@ -31,17 +32,18 @@ export const Main = () => {
           </Box>
           <Footer openVideo={onOpenVideo} onClick={loopThroughArray} />
           <Box pt={4}>
-            <Link key="whitelist" href="/whitelist">
-              <Button
-                bgColor="rgb(130, 164, 181)"
-                textColor="white"
-                variant="outline"
-                pt={1}
-                _hover={{ color: "none" }}
-              >
+            <Button
+              size="lg"
+              bgColor="rgb(130, 164, 181)"
+              textColor="white"
+              variant="outline"
+              pt={1}
+              _hover={{ color: "none" }}
+            >
+              <PopupButton id="krjzwhpd">
                 <Center>whitelist</Center>
-              </Button>
-            </Link>
+              </PopupButton>
+            </Button>
           </Box>
         </Stack>
       </Flex>
