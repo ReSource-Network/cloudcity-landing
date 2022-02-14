@@ -1,52 +1,6 @@
-import {
-  Box,
-  Center,
-  Flex,
-  Link,
-  Menu,
-  MenuButton,
-  MenuList,
-  Portal,
-  Spacer,
-  Stack,
-  Text,
-  useDisclosure,
-  useMenuItem,
-  VisuallyHidden,
-} from "@chakra-ui/react"
 import { motion } from "framer-motion"
-import React, { ReactNode, useState } from "react"
-import { MenuOverlay } from "./MenuOverlay"
-
+import React from "react"
 import { MotionBox } from "./MotionBox"
-
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link px={2} py={1} rounded="md" href="#">
-    {children}
-  </Link>
-)
-
-export const Navv = ({ isOpen, onOpen, onClose }) => {
-  return (
-    <>
-      <Box px={4}>
-        <Flex h={16} alignItems="center" justifyContent="space-between">
-          <Box>
-            <Spacer />
-          </Box>
-
-          <Flex alignItems="center">
-            <Stack direction="row" spacing={7}>
-              <VisuallyHidden>{isOpen ? "show" : "hide" + " menu"}</VisuallyHidden>
-              <MenuIcon isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
-            </Stack>
-          </Flex>
-        </Flex>
-      </Box>
-      s
-    </>
-  )
-}
 
 const transition = {
   duration: 0.5,
