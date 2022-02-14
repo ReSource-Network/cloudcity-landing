@@ -1,6 +1,5 @@
 import { Box, Button, Center, Flex, Image, Stack, Text, useDisclosure } from "@chakra-ui/react"
 import { PopupButton } from "@typeform/embed-react"
-import Link from "next/link"
 import React, { useCallback, useState } from "react"
 import { Footer, VideoOverlay } from "src/components"
 import { VIDEOS } from "src/utils"
