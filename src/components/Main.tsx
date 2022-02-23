@@ -40,7 +40,7 @@ export const Main = () => {
               _hover={{ color: "none" }}
             >
               <PopupButton id="krjzwhpd" style={{ all: "unset" }}>
-                <Center>whitelist</Center>
+                <Center>join us</Center>
               </PopupButton>
             </Button>
           </Box>
